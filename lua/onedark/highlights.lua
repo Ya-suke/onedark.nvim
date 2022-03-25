@@ -41,7 +41,7 @@ hl.common = {
     lCursor = {fmt = "reverse"},
     CursorIM = {fmt = "reverse"},
     CursorColumn = {bg = c.bg1},
-    CursorLine = {bg = c.bg1},
+    CursorLine = {bg = c.none},
     ColorColumn = {bg = c.bg1},
     CursorLineNr = {fg = c.fg},
     LineNr = {fg = c.grey},
@@ -90,8 +90,8 @@ hl.common = {
     debugPC = {fg = c.bg0, bg = c.green},
     debugBreakpoint = {fg = c.bg0, bg = c.red},
     ToolbarButton = {fg = c.bg0, bg = c.bg_blue},
-    FloatBorder = {fg = c.grey, bg = c.bg1},
-    NormalFloat = {fg = c.fg, bg = c.bg1},
+    FloatBorder = {fg = c.grey, bg = c.none},
+    NormalFloat = {fg = c.fg, bg = c.none},
 }
 
 hl.syntax = {
@@ -289,10 +289,10 @@ hl.plugins.coc = {
 }
 
 hl.plugins.whichkey = {
-    WhichKey = colors.Red,
+    WhichKey = colors.Green,
+    WhichKeyFloat = colors.Fg,
     WhichKeyDesc = colors.Blue,
-    WhichKeyGroup = colors.Orange,
-    WhichKeySeperator = colors.Green
+    WhichKeyGroup = colors.Blue,
 }
 
 hl.plugins.gitgutter = {
@@ -374,8 +374,8 @@ hl.plugins.telescope = {
 }
 
 hl.plugins.dashboard = {
-    DashboardShortCut = colors.Blue,
-    DashboardHeader = colors.Yellow,
+    DashboardShortCut = colors.Cyan,
+    DashboardHeader = colors.Cyan,
     DashboardCenter = colors.Cyan,
     DashboardFooter = { fg = c.dark_red, fmt = "italic"}
 }
