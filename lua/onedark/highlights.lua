@@ -61,7 +61,7 @@ hl.common = {
     IncSearch = {fg = c.bg0, bg = c.orange},
     Search = {fg = c.bg0, bg = c.bg_yellow},
     Substitute = {fg = c.bg0, bg = c.green},
-    MatchParen = {fg = c.none, bg = c.grey},
+    MatchParen = {fg = c.none, bg = c.bg2},
     NonText = {fg = c.grey},
     Whitespace = {fg = c.grey},
     SpecialKey = {fg = c.grey},
@@ -222,9 +222,12 @@ hl.plugins.lsp = {
     DiagnosticUnderlineInfo = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.blue},
     DiagnosticUnderlineWarn = {fmt = cfg.diagnostics.undercurl and "undercurl" or "underline", sp = c.yellow},
 
-    LspReferenceText = {fmt = "underline"},
-    LspReferenceWrite = {fmt = "underline"},
-    LspReferenceRead = {fmt = "underline"}
+    LspReferenceText = { fg = c.none, bg = c.bg1 },
+    LspReferenceRead = { fg = c.none, bg = c.bg1 },
+    LspReferenceWrite = { fg = c.none, bg = c.bg1 },
+    -- LspReferenceText = {fmt = "underline"},
+    -- LspReferenceWrite = {fmt = "underline"},
+    -- LspReferenceRead = {fmt = "underline"}
 }
 
 hl.plugins.lsp.LspDiagnosticsDefaultError = hl.plugins.lsp.DiagnosticError
