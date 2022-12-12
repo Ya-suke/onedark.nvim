@@ -557,6 +557,30 @@ hl.plugins.mini = {
     MiniTrailspace = { bg = c.red },
 }
 
+hl.plugins.notify = {
+   -- NotifyERRORBorder = { fg = c.error_red },
+   -- NotifyWARNBorder = { fg = c.warning_orange },
+   -- NotifyINFOBorder = { fg = c.green },
+   -- NotifyDEBUGBorder = { fg = c.purple_test },
+   -- NotifyTRACEBorder = { fg = c.purple },
+   -- NotifyERRORIcon = { fg = c.error_red },
+   -- NotifyWARNIcon = { fg = c.warning_orange },
+   -- NotifyINFOIcon = { fg = c.green },
+   -- NotifyDEBUGIcon = { fg = c.purple_test },
+   -- NotifyTRACEIcon = { fg = c.purple },
+   -- NotifyERRORTitle = { fg = c.error_red },
+   -- NotifyWARNTitle = { fg = c.warning_orange },
+   -- NotifyINFOTitle = { fg = c.green },
+   -- NotifyDEBUGTitle = { fg = c.purple_test },
+   -- NotifyTRACETitle = { fg = c.purple },
+   -- NotifyERRORBody = { fg = c.fg },
+   -- NotifyWARNBody = { fg = c.fg },
+   -- NotifyINFOBody = { fg = c.fg },
+   -- NotifyDEBUGBody = { fg = c.fg },
+   -- NotifyTRACEBody = { fg = c.fg },
+   NotifyBackground = { bg = "#282a36" }
+}
+
 hl.langs.c = {
     cInclude = colors.Blue,
     cStorageClass = colors.Purple,
